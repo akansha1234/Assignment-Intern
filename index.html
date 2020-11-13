@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+    	.container{
+    		background-color: #80808045;
+    		width:480px;
+    		margin:150px auto;
+    		padding:10px;
+    	}
+    	.thumbnail{
+    		width:400px;
+    		height:500px;
+    		margin:0 auto;
+    	}
+    	.overlay {
+            position: relative;
+            overflow: hidden;
+            height:200px;
+        }
+
+    	.overlay:before{
+    		content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            position: absolute;
+            background:rgba(0,0,0,0.4);        
+    	}
+    	.content{
+    		background-color: white;
+    		padding:5px;
+    		padding-left: 20px;
+    	}
+    	h4{
+    		color: red;
+    		font-weight: bold;
+    	}
+    	p{
+    		color: grey;
+    		line-height: 25px;
+    	}
+    	.label{
+    		position: absolute;
+    		top:30px;
+    		left:300px;
+    		border-radius: 100%;
+    		padding:12px;
+    		font-weight: bold;
+    		font-size: 15px;
+    	}
+    	.btn{
+    		position: absolute;
+    		bottom: 0px;
+    		font-weight: bold;
+    		font-size: 15px;
+    	}
+    </style>
+</head>
+<body>
+	<div class="container">
+		<div class="thumbnail">
+			<div class="overlay">
+			<img src="https://images.unsplash.com/photo-1500228630616-d6905f33ad1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+            <span class="label label-danger">27<br> MAR</span>
+			<button type="button" class="btn btn-danger">Photos</button>
+		</div>
+			<div class="content">
+				<h2>City Lights in New York </h2>
+				<h4>The city that never sleeps</h4>
+				<p>New York,the largest city in the U.S., is an<br>
+				architectural marvel with plenty of historic<br>
+			    monuments,magnificient buildings and<br> 
+			    countless dazzling skyscrapers.</p>
+			    <div class="row">
+			    	<div class="col-lg-6">
+			    		<p><i class='fa'>&#xf017;</i> 6 mins ago</p>
+			    	</div>
+			    	<div class="col-lg-6">
+			    		<p><i class="fa fa-comments"></i> 39 comments</p>
+			    	</div>
+			    </div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
